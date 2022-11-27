@@ -5,7 +5,6 @@ import styles from '../styles';
 import {fadeIn, staggerContainer} from  '../utils/motion';
 import { ExploreCard, TitleText , TypingText} from "../components";
 import {exploreWorlds} from '../constants'
-import World from "./World";
 
 const Explore = () => {
 const [active, setActive] = useState('world-2')
