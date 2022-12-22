@@ -31,8 +31,14 @@ const GetStarted = () => (
      >
       <TypingText title="| How Metaverse works" />
       <TitleText title={<>Get started with just a few clicks</>} />
-      <div className="mt-[32px] flex flex-col max-w-[37px] gap-[24px]">
-
+      <div className="mt-[32px] flex flex-col max-w-[37px] gap-[24px] ">
+     {startingFeatures.map((feature, index) =>(
+      <StartSteps 
+        key={feature}
+        number={index+1}
+        text={feature}
+      />
+     ))}
       </div>
      </motion.div>
     </motion.div>
